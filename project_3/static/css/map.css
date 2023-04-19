@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #map,
+  body,
+  html {
+    height: 100%;
+    width: 100%
+  }
+
+  .legend-color-box {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    display: inline-block;
+    margin-right: 5px;
+}
