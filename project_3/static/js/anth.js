@@ -1,9 +1,8 @@
 //API URL: https://api.covidactnow.org/v2/states.json?apiKey={apiKey}
 
 const baseAllStatesURL = "https://api.covidactnow.org/v2/states.json?apiKey=";
-const apiKey = "e7900bbde7424392b7361225eebf01ce";
-let statesQuery = baseAllStatesURL + apiKey;
 
+let statesQuery = baseAllStatesURL + api_key;
 
 d3.json(statesQuery).then(function(data) {
     console.log(data);
@@ -151,20 +150,20 @@ function buildBarChart(state){
        let stateData = data.filter(result => result.state == state);
        //We want total cases, deaths, and vaccines per state for the bar chart
        let barChartData = [{
-           x: ["Total Cases", "Total Deaths", "Total Vaccines Administered"],
-           y: [stateData[0].actuals.cases, stateData[0].actuals.deaths, stateData[0].actuals.vaccinesAdministered],
+           x: ["Total Cases", "Total Deaths", "Fall2022 Bivalent Booster"],
+           y: [stateData[0].actuals.cases, stateData[0].actuals.deaths, stateData[0].actuals.vaccinationsFall2022BivalentBooster],
            name: `${state} Totals`,
            type: 'bar',
            marker: {
                color: ['#2CA02C', 'FFA833', 'AC33FF']
            },
            hovertext: [stateData[0].actuals.cases.toLocaleString(),
-            stateData[0].actuals.deaths.toLocaleString(), stateData[0].actuals.vaccinesAdministered.toLocaleString()],
+            stateData[0].actuals.deaths.toLocaleString(), stateData[0].actuals.vaccinationsFall2022BivalentBooster.toLocaleString()],
            hoverinfo: 'text'
        }];
        let layout = {
            yaxis: {
-               title: 'Totals'
+               title: 'Case and Death Totals'
              }
        };
          
@@ -172,6 +171,30 @@ function buildBarChart(state){
        
    }); 
 };
+
+function buildPieChart(state){
+    // Use D3 to retrieve all of the data
+    d3.json(statesQuery).then((data) => {
+       //Filter based on state we want
+       let stateData = data.filter(result => result.state == state);
+       let pieChartData = [{
+        values: [stateData[0].actuals.positiveTests, stateData[0].actuals.negativeTests],
+        labels: ["Positive Tests", "Negatives Tests"],
+        type: "pie",
+        marker:{
+            colors: ["AC33FF", "D7FF33"],
+            hovertemplate: '%{label}: %{percent:.1f}%'
+        }
+       }];
+
+       let layout = {
+        title: "Positive vs Negative Tests"
+       };
+
+       Plotly.newPlot("pie", pieChartData, layout);
+       
+   }); 
+}
 
 function optionChanged(state) { 
     // Check to make sure we are switching values
