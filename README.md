@@ -31,6 +31,7 @@ conn.close()
 
 <p> We use our newly created SQLite database to create our cases, deaths and vaccinations maps using a Flask API. From these maps we see more densely populated areas see more cases and areas with higher vaccination rates see lower mortaility rates. </p>
 <img width="1440" alt="COVID map" src="https://user-images.githubusercontent.com/119609975/233462069-fec0f6bd-8ffc-4294-8293-6e2518702b2e.png">
+<img width="1440" alt="Screenshot 2023-04-20 at 19 18 14" src="https://user-images.githubusercontent.com/119609975/233506389-04a64120-e347-49d7-a822-0797bafec49c.png">
 <p> Our second set of visualizations for the COVID-19 data looks at it graphically. Our first page contains 4 graphics:
 <ol> 
   <li>Numerical Metrics </li>
@@ -41,6 +42,7 @@ conn.close()
 </p>
 
 <img width="1440" alt="NJ Dashboard" src="https://user-images.githubusercontent.com/119609975/233463855-def8454a-b4e4-4824-8546-5bb7a86c0d46.png">
+
 
 <p> As expected we see negative tests far outpace positive tests, however, it's notable that the ratio of positive tests to negative tests increases as the ratio cases of cases to Fall2022 Bivalent Booster vaccines increases. </p>
 <br>
