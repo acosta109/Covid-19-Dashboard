@@ -47,5 +47,30 @@ def get_state_data():
 def home():
     return render_template('cases.html')
 
+# define a route to serve the vaccines page
+@app.route('/vaccines')
+def vaccines():
+    return render_template('vaccines.html')
+
+# define a route to serve the homepage
+@app.route('/homepage')
+def homepage():
+    return render_template('homepage.html')
+
+# define a route to serve the deaths page
+@app.route('/deaths')
+def deaths():
+    return render_template('deaths.html')
+
+# define a route to serve the covid multi-line page
+@app.route('/covid_multi_line')
+def covid_multi_Line():
+    return render_template('covid-Multi-Line.html')
+
+# define a route to serve the covid charts page
+@app.route('/covid_charts')
+def covid_charts():
+    return render_template('Covid-Charts.html')
+
 if __name__ == '__main__':
-    app.run() # debug mode is disabled by default in production mode
+    app.run() # debug mode is disabled by default in production mode 
