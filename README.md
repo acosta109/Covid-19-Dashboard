@@ -74,6 +74,6 @@ contained null values for the vaccine data. The data selected shows totals for 2
     <li>/deaths </li>
     <li>/vaccines </li>
     <li>/covid_multi_line </li>
-    <li>/coivd_charts </li>
+    <li>/covid_charts </li>
 </ul>
 
