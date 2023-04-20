@@ -1,10 +1,10 @@
 
 const apiEndpoint = "https://api.covidactnow.org/v2/states.json";
-const apiKey = "0c417904f50d4ee1ba49933bd4d12c08";
 
 
 
-d3.json(apiEndpoint + "?apiKey=" + apiKey).then(data => {
+
+d3.json(apiEndpoint + "?apiKey=" + api_key).then(data => {
   console.log(data);
 });
 
@@ -17,7 +17,7 @@ function init() {
     let dropdownMenu = d3.select("#selDataset");
 
     // Use D3 to get sample names and populate the drop-down selector
-    d3.json(apiEndpoint + "?apiKey=" + apiKey).then((data) => {
+    d3.json(apiEndpoint + "?apiKey=" + api_key).then((data) => {
         for (var i =0; i< data.length;i++){
         // Set a variable for each state
         let states = data[i].state;
@@ -43,7 +43,7 @@ function init() {
  function buildMetadata(sample) {
 
 //     // Use D3 to retrieve all of the data
-d3.json(apiEndpoint + "?apiKey=" + apiKey).then((data) => {
+d3.json(apiEndpoint + "?apiKey=" + api_key).then((data) => {
 
      // Retrieve all metrics
            let metrics = data.metrics;

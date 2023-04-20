@@ -6,9 +6,8 @@ const baseAllStatesURL = "https://api.covidactnow.org/v2/states.json?apiKey=";
 //Build our timeseries URL parts
 const timeSeriesURLpt1 = "https://api.covidactnow.org/v2/state/";
 const timeSeriesURLpt2 = ".timeseries.json?apiKey=";
-const apiKey = "e7900bbde7424392b7361225eebf01ce";
 
-let statesQuery = baseAllStatesURL + apiKey;
+let statesQuery = baseAllStatesURL + api_key;
 
 // Initialise the dashboard at start up 
 function init() {
@@ -59,7 +58,7 @@ function buildLineGraph(state){
     let datesArray = [];
     d3.select("#myChart").html("");
     //Create query URL
-    let timeSeriesQuery = timeSeriesURLpt1 + state + timeSeriesURLpt2 + apiKey;
+    let timeSeriesQuery = timeSeriesURLpt1 + state + timeSeriesURLpt2 + api_key;
     //console.log(timeSeriesQuery);
     //Get the data
     d3.json(timeSeriesQuery).then((data) => {

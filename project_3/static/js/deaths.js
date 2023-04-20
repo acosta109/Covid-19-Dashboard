@@ -16,7 +16,7 @@ var myMap = L.map("map", {
   
   // var popup = marker2.bindPopup('<b>Hello world!</b><br />I am a popup.');
   const apiEndpoint = "https://api.covidactnow.org/v2/states.json";
-  const apiKey = "0c417904f50d4ee1ba49933bd4d12c08";
+
 
   
   
@@ -41,7 +41,7 @@ var myMap = L.map("map", {
   
   
   Promise.all([
-    d3.json(apiEndpoint+ "?apiKey=" + apiKey),
+    d3.json(apiEndpoint+ "?apiKey=" + api_key),
     d3.json('./static/js/latlon.json')
   ]).then(data => {
     console.log("Data loaded from both sources:", data);
