@@ -43,7 +43,7 @@ def get_state_data():
     return jsonify(data)
 
 # define a route to serve the home page
-@app.route('/')
+@app.route('/cases')
 def home():
     return render_template('cases.html')
 
@@ -53,7 +53,7 @@ def vaccines():
     return render_template('vaccines.html')
 
 # define a route to serve the homepage
-@app.route('/homepage')
+@app.route('/')
 def homepage():
     return render_template('homepage.html')
 
