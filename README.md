@@ -68,3 +68,12 @@ contained null values for the vaccine data. The data selected shows totals for 2
 
 ![NJ Timeseries Deaths Data](https://user-images.githubusercontent.com/119609975/233472839-0e669748-c175-4ca8-bcf5-4792e0c8e3da.png)
 
+<h1>Flask Links for complete.py </h1>
+<ul>
+    <li>/cases </li>
+    <li>/deaths </li>
+    <li>/vaccines </li>
+    <li>/covid_multi_line </li>
+    <li>/coivd_charts </li>
+</ul>
+
