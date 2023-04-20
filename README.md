@@ -29,7 +29,7 @@ conn.commit()
 conn.close()
 ```
 
-<p> We use our newly created SQLite database to create our cases, deaths and vaccinations maps. From these maps we see more densely populated areas see more cases and areas with higher vaccination rates see lower mortaility rates. </p>
+<p> We use our newly created SQLite database to create our cases, deaths and vaccinations maps using a Flask API. From these maps we see more densely populated areas see more cases and areas with higher vaccination rates see lower mortaility rates. </p>
 <img width="1440" alt="COVID map" src="https://user-images.githubusercontent.com/119609975/233462069-fec0f6bd-8ffc-4294-8293-6e2518702b2e.png">
 <p> Our second set of visualizations for the COVID-19 data looks at it graphically. Our first page contains 4 graphics:
 <ol> 
