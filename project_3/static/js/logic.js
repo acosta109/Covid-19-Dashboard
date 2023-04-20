@@ -43,6 +43,7 @@ const getColor = d => {
 };
 
 
+
 Promise.all([
   d3.json(apiEndpoint+ "?apiKey=" + apiKey),
   d3.json('./static/js/latlon.json')

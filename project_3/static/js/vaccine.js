@@ -40,7 +40,7 @@ var myMap = L.map("map", {
     }
   };
 
-
+  [" <55% ", "55%-60%", "60%-65%  ","65%-70%", "70%-75% ", "75%-80% ", " 80%+ "]
   
   Promise.all([
     d3.json(apiEndpoint+ "?apiKey=" + apiKey),
@@ -80,8 +80,8 @@ var myMap = L.map("map", {
   var legend = L.control({position: 'bottomright'});
   legend.onAdd = function () {
       var div = L.DomUtil.create('div', 'info legend');
-      var labels = [" 0-250,000 ", "250,000 - 500,000", "500,000 - 750,000  ","750,000 - 1,000,000", "1,000,000 - 2,000,000 ", "2,000,000 - 5,000,000 ", " 5,000,000+ "];
-      var ranges = ['#FED980','#FEB25C','#FD8D3C','#FC4E3A', '#E31A1B','#BD0030', '#800023'];
+      var labels = [" <55% ", "55%-60%", "60%-65%  ","65%-70%", "70%-75% ", "75%-80% ", " 80%+ "];
+      var ranges = ['#800023','#BD0030','#FC4E3A','#FF0000', '#00FF00','#008000', '#006400'];
       var div = L.DomUtil.create('div', 'info legend');
       div.style.backgroundColor = 'white'; // Add this line to set the background color
       var legendInfo = "";
