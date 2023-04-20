@@ -1,6 +1,6 @@
 #adding apiKeys
-api.py
-config.js
+static/python/api.py
+static/js/config.js
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
