@@ -2,8 +2,8 @@
 <h2> Anthony Costa, Jon Diaz, Sarah Kim, Aakash Nagalapura </h2>
 
 
-<h3 href="https://apidocs.covidactnow.org/"> Data Source: Covid Act Now API </h3>
-<h3 href="https://www.chartjs.org/"> Addtional JavaScript Library: Chart.js </h3>
+## Data Source: [Covid Act Now API](https://apidocs.covidactnow.org/) 
+## Addtional JavaScript Library: [Chart.js](https://www.chartjs.org/) 
 
 ---
 
