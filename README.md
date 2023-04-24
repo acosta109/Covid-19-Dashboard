@@ -41,7 +41,7 @@ conn.close()
 <p> Our second set of visualizations for the COVID-19 data looks at it graphically. Our first page contains 4 graphics:
 <ol> 
   <li>Numerical Metrics </li>
-  <li> Pie Chart of Postive vs. Negative Tests </li>
+  <li> Pie Chart of Positive vs. Negative Tests </li>
   <li> Gauge of the Current Infection Rate (0-5) </li>
   <li> Bar Chart: Cases-Deaths-Fall2022 Bivalent Booster </li>
 </ol>
