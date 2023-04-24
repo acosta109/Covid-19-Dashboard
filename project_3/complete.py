@@ -55,7 +55,7 @@ def vaccines():
 # define a route to serve the homepage
 @app.route('/')
 def homepage():
-    return render_template('homepage.html')
+    return render_template('cases.html')
 
 # define a route to serve the deaths page
 @app.route('/deaths')
