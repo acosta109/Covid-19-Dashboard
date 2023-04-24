@@ -32,7 +32,7 @@ conn.close()
 <p> We use our newly created SQLite database to create our cases, deaths and vaccinations maps using a Flask API. From these maps we see more densely populated areas see more cases and areas with higher vaccination rates see lower mortaility rates. </p>
 <img width="1440" alt="COVID map" src="https://user-images.githubusercontent.com/119609975/233462069-fec0f6bd-8ffc-4294-8293-6e2518702b2e.png">
 <img width="1440" alt="Screenshot 2023-04-20 at 19 18 14" src="https://user-images.githubusercontent.com/119609975/233506389-04a64120-e347-49d7-a822-0797bafec49c.png">
-![Screenshot 2023-04-20 at 20 36 17](https://user-images.githubusercontent.com/119609975/233514135-29e4d272-d66a-4039-ba46-4b3f7eeac5a6.png)
+<img width="1440" alt="Screenshot 2023-04-20 at 20 36 17" src="https://user-images.githubusercontent.com/119609975/233514135-29e4d272-d66a-4039-ba46-4b3f7eeac5a6.png">
 
 <p> Our second set of visualizations for the COVID-19 data looks at it graphically. Our first page contains 4 graphics:
 <ol> 
